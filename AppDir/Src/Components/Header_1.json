@@ -159,7 +159,7 @@
         "Name": "Title_1",
         "Parent": "Header_1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 18,
+        "PublishOrderIndex": 66,
         "Rules": [
           {
             "Category": "Data",
@@ -530,7 +530,7 @@
         "Name": "Logo_2",
         "Parent": "Header_1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 19,
+        "PublishOrderIndex": 67,
         "Rules": [
           {
             "Category": "Data",

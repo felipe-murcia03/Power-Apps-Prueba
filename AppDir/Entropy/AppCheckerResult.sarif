@@ -1018,18 +1018,306 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2"
+                  "fullyQualifiedName": "'Consultar Productos'.Gallery1.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2",
+                  "fullyQualifiedName": "'Consultar Productos'.Gallery1.Items",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 45,
+                  "snippet": {
+                    "text": "\"NombredelProducto\""
+                  }
                 }
               },
               "properties": {
-                "module": "Screen2",
-                "type": "Screen2"
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Search"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 27,
+                  "charOffset": 255,
+                  "snippet": {
+                    "text": "'Configuración de Usuarios'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Configuración de Usuarios"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 17,
+                  "charOffset": 424,
+                  "snippet": {
+                    "text": "'Archivos Planos'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Archivos Planos"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 581,
+                  "snippet": {
+                    "text": "Reinyecciones"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Reinyecciones"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 734,
+                  "snippet": {
+                    "text": "'Abrir Periodo'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Abrir Periodo"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 891,
+                  "snippet": {
+                    "text": "'Plantilla Calendario'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Plantilla Calendario"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 1060,
+                  "snippet": {
+                    "text": "'Calendario de Nómina'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Calendario de Nómina"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 160,
+                  "charOffset": 152,
+                  "snippet": {
+                    "text": "{\r\n        MenuLabel: \"Configuración\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: 'Configuración de Usuarios';\r\n        MenuId: 2   \r\n    }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
               }
             }
           ],
@@ -1037,10 +1325,265 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Low"
+            "level": "High"
           },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 3
+          "ruleId": "app-ErrIncompatibleRecord",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 152,
+                  "charOffset": 319,
+                  "snippet": {
+                    "text": "{\r\n        MenuLabel: \"Archivos planos\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: 'Archivos Planos';\r\n        MenuId: 3   \r\n    }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleRecord",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 146,
+                  "charOffset": 478,
+                  "snippet": {
+                    "text": "{\r\n        MenuLabel: \"Reinyecciones\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: Reinyecciones;\r\n        MenuId: 4   \r\n    }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleRecord",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 148,
+                  "charOffset": 631,
+                  "snippet": {
+                    "text": "{\r\n        MenuLabel: \"Abrir Periodo\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: 'Abrir Periodo';\r\n        MenuId: 5   \r\n    }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleRecord",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 157,
+                  "charOffset": 786,
+                  "snippet": {
+                    "text": "{\r\n        MenuLabel: \"Crear Plantilla\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: 'Plantilla Calendario';\r\n        MenuId: 6   \r\n    }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleRecord",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 162,
+                  "charOffset": 950,
+                  "snippet": {
+                    "text": "{\r\n        MenuLabel: \"Calendario de nómina\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: 'Calendario de Nómina';\r\n        MenuId: 7   \r\n    }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleRecord",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.ComponentMenu_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1251,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Table(\r\n    {\r\n        MenuLabel: \"Inicio\";\r\n        MenuIcon: Icon.NextArrow; \r\n        MenuScreenNavigate: Inicio;\r\n        MenuId: 1   \r\n    };\r\n    {\r\n        MenuLabel: \"Configuración\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: 'Configuración de Usuarios';\r\n        MenuId: 2   \r\n    };\r\n    {\r\n        MenuLabel: \"Archivos planos\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: 'Archivos Planos';\r\n        MenuId: 3   \r\n    };\r\n    {\r\n        MenuLabel: \"Reinyecciones\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: Reinyecciones;\r\n        MenuId: 4   \r\n    };\r\n    {\r\n        MenuLabel: \"Abrir Periodo\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: 'Abrir Periodo';\r\n        MenuId: 5   \r\n    };\r\n    {\r\n        MenuLabel: \"Crear Plantilla\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: 'Plantilla Calendario';\r\n        MenuId: 6   \r\n    };\r\n    {\r\n        MenuLabel: \"Calendario de nómina\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: 'Calendario de Nómina';\r\n        MenuId: 7   \r\n    };\r\n    {\r\n        MenuLabel: \"Salir\";\r\n        MenuIcon: Icon.NextArrow;\r\n        MenuScreenNavigate: Inicio;\r\n        MenuId: 8 \r\n    }\r\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.ComponentMenu_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Table"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.Gallery1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.Gallery1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1210,6 +1753,156 @@
                 "member": "TabIndex",
                 "module": "ComponentMenu",
                 "type": "ComponentMenu.GaleriaMenu"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.Gallery1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.Gallery1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.FormViewer1.'País de Fabricación_DataCard1'.DataCardValue10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.FormViewer1.'País de Fabricación_DataCard1'.DataCardValue10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.FormViewer1.'País de Fabricación_DataCard1'.DataCardValue10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.TextInput1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.TextInput1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.TextInput1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.Icon7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.Icon7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.Icon7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consultar Productos'.Icon7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consultar Productos'.Icon7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Consultar Productos",
+                "type": "'Consultar Productos'.Icon7"
               }
             }
           ],
@@ -1724,20 +2417,22 @@
               }
             },
             {
-              "id": "acc-ReadableScreenNameNeeded",
+              "id": "app-SuggestRemoteExecutionHint",
               "messageStrings": {
                 "issue": {
-                  "text": "Revise screen name"
+                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Give the screen  a title that describes what's on the screen or what it's used for."
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
                 ],
-                "level": "Low",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
+                "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
               }
             },
             {

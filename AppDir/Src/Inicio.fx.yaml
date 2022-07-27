@@ -132,7 +132,7 @@ Inicio As screen:
         Button2_3 As button:
             Fill: =RGBA(0, 16, 96, 1)
             Height: =176
-            Text: ="Consular Productos"
+            Text: ="Consultar Productos"
             VerticalAlign: =VerticalAlign.Bottom
             Width: =225
             X: =825

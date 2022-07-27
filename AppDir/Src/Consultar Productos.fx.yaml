@@ -1,0 +1,564 @@
+"'Consultar Productos' As screen":
+
+    ComponentMenu_2 As ComponentMenu:
+        OnReset: =Set(mostrarMenu, ComponentMenu_2.ExpandirMenu)
+        TituloMenu: ="Consultar Productos"
+        Width: =If(ComponentMenu_2.Responsive = true, 343, 47)
+        ZIndex: =1
+
+    Header_3 As Header_1:
+        Height: =50
+        Logo: =productos
+        LogoHeight: =50
+        Title: ="Consultar Productos"
+        Width: =If(Header_3.X = 47, 1320, 1023)
+        X: =If(ComponentMenu_2.Responsive = true, 343, 47)
+        ZIndex: =2
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(0, 13, 75, 1)
+        BorderThickness: =2
+        Height: =673
+        Items: =Search('Registro Productos', TextInput1.Text,"NombredelProducto", "Caracter_x00ed_sticas")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =142
+        Width: =652
+        X: =48
+        Y: =94
+        ZIndex: =3
+
+        Image2 As image:
+            Height: =128
+            Image: =ThisItem.'Imagen Producto'
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title1 As label:
+            Height: =34
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: |-
+                ="Nombre Producto:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =193
+            X: =144
+            Y: =44
+            ZIndex: =2
+
+        Subtitle1 As label:
+            Height: =32
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.ID
+            VerticalAlign: =VerticalAlign.Top
+            Width: =179
+            X: =284
+            Y: =78
+            ZIndex: =3
+
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.View
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Ver los detalles del elemento"
+            Width: =60
+            X: =561
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Title1_1 As label:
+            FontWeight: =FontWeight.Normal
+            Height: =29
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.'Nombre del Producto'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =210
+            X: =351
+            Y: =44
+            ZIndex: =6
+
+        Title1_2 As label:
+            Height: =34
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: |-
+                ="ID Producto:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =193
+            X: =144
+            Y: =78
+            ZIndex: =7
+
+    FormViewer1 As formViewer:
+        DataSource: ='Registro Productos'
+        Height: =720
+        Item: =Gallery1.Selected
+        NumberOfColumns: =1
+        Width: =656
+        X: =710
+        Y: =48
+        ZIndex: =4
+
+        ID_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ID"
+            Default: =ThisItem.ID
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Registro Productos'],DataSourceInfo.DisplayName,"ID")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =661
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey11 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: ="ID Producto"
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue11.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue11 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey11.X + DataCardKey11.Width
+                Y: =10
+                ZIndex: =2
+
+        "'Nombre del Producto_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NombredelProducto"
+            Default: =ThisItem.'Nombre del Producto'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Registro Productos'],DataSourceInfo.DisplayName,"NombredelProducto")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =661
+            X: =0
+            Y: =1
+            ZIndex: =5
+
+            DataCardKey2 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue2.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue2 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey2.X + DataCardKey2.Width
+                Y: =10
+                ZIndex: =2
+
+        Características_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Caracter_x00ed_sticas"
+            Default: =ThisItem.Características
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Registro Productos'],DataSourceInfo.DisplayName,"Caracter_x00ed_sticas")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =661
+            X: =0
+            Y: =2
+            ZIndex: =5
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue3.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue3 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey3.X + DataCardKey3.Width
+                Y: =10
+                ZIndex: =2
+
+        "'Fecha de Lanzamiento_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="FechadeLanzamiento"
+            Default: =ThisItem.'Fecha de Lanzamiento'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Registro Productos'],DataSourceInfo.DisplayName,"FechadeLanzamiento")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =661
+            X: =0
+            Y: =3
+            ZIndex: =5
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue4.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue4 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey4.X + DataCardKey4.Width
+                Y: =10
+                ZIndex: =2
+
+        "'Correo Fabricante_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="CorreoFabricante"
+            Default: =ThisItem.'Correo Fabricante'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Registro Productos'],DataSourceInfo.DisplayName,"CorreoFabricante")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =661
+            X: =0
+            Y: =4
+            ZIndex: =5
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue5.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue5 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey5.X + DataCardKey5.Width
+                Y: =10
+                ZIndex: =2
+
+        Precio_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Precio"
+            Default: =ThisItem.Precio
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Registro Productos'],DataSourceInfo.DisplayName,"Precio")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =661
+            X: =0
+            Y: =5
+            ZIndex: =5
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue6.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue6 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey6.X + DataCardKey6.Width
+                Y: =10
+                ZIndex: =2
+
+        "'Unidades Disponibles_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="UnidadesDisponibles"
+            Default: =ThisItem.'Unidades Disponibles'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Registro Productos'],DataSourceInfo.DisplayName,"UnidadesDisponibles")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =661
+            X: =0
+            Y: =6
+            ZIndex: =5
+
+            DataCardKey7 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue7.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue7 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey7.X + DataCardKey7.Width
+                Y: =10
+                ZIndex: =2
+
+        "'Unidades Vendidas_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="UnidadesVendidas"
+            Default: =ThisItem.'Unidades Vendidas'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Registro Productos'],DataSourceInfo.DisplayName,"UnidadesVendidas")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =661
+            X: =0
+            Y: =7
+            ZIndex: =5
+
+            DataCardKey8 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue8.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue8 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey8.X + DataCardKey8.Width
+                Y: =10
+                ZIndex: =2
+
+        "'Imagen Producto_DataCard1' As typedDataCard.largeImageViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ImagenProducto"
+            Default: =ThisItem.'Imagen Producto'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Registro Productos'],DataSourceInfo.DisplayName,"ImagenProducto")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Width: =661
+            X: =0
+            Y: =8
+            ZIndex: =5
+
+            DataCardKey9 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue9.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue9 As image:
+                DisplayMode: =Parent.DisplayMode
+                Height: =155
+                Image: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey9.X + DataCardKey9.Width
+                Y: =10
+                ZIndex: =2
+
+        "'País de Fabricación_DataCard1' As typedDataCard.comboBoxViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Pa_x00ed_sdeFabricaci_x00f3_n"
+            Default: =ThisItem.'País de Fabricación'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Registro Productos'],DataSourceInfo.DisplayName,"Pa_x00ed_sdeFabricaci_x00f3_n")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue10.Selected
+            Width: =661
+            X: =0
+            Y: =9
+            ZIndex: =5
+
+            DataCardKey10 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue10.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue10 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Registro Productos'].'País de Fabricación')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Registro Productos'.'País de Fabricación',DataCardValue10.SearchText)
+                SelectMultiple: =false
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey10.X + DataCardKey10.Width
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue10.Y + DataCardValue10.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey10.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey10.Y
+                ZIndex: =4
+
+    Rectangle4 As rectangle:
+        Fill: =RGBA(0, 16, 96, 1)
+        Height: =718
+        Width: =9
+        X: =700
+        Y: =50
+        ZIndex: =5
+
+    TextInput1 As text:
+        Default: =""
+        Height: =44
+        HintText: ="Nombre Producto"
+        Width: =652
+        X: =48
+        Y: =50
+        ZIndex: =6
+
+    Icon7 As icon.Cancel:
+        Height: =32
+        Icon: =Icon.Cancel
+        OnSelect: =Reset(TextInput1)
+        Width: =32
+        X: =652
+        Y: =56
+        ZIndex: =7
+
