@@ -1,4 +1,4 @@
-Screen1 As screen:
+Inicio As screen:
 
     Rectangle3 As rectangle:
         Fill: =RGBA(215, 223, 240, 1)
@@ -64,14 +64,14 @@ Screen1 As screen:
             VerticalAlign: =VerticalAlign.Bottom
             Width: =225
             X: =1095
-            Y: =296
+            Y: =204
             ZIndex: =12
 
         Icon3 As icon.AddLibrary:
             Color: =RGBA(255, 255, 255, 1)
             Icon: =Icon.AddLibrary
             X: =1175
-            Y: =338
+            Y: =246
             ZIndex: =14
 
     Group3 As group:
@@ -88,13 +88,61 @@ Screen1 As screen:
             VerticalAlign: =VerticalAlign.Bottom
             Width: =225
             X: =825
-            Y: =296
+            Y: =204
             ZIndex: =11
 
         Icon4 As icon.AddDocument:
             Color: =RGBA(255, 255, 255, 1)
             Icon: =Icon.AddDocument
             X: =905
-            Y: =338
+            Y: =246
             ZIndex: =15
+
+    Group2_1 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =20
+
+        Button2_2 As button:
+            Fill: =RGBA(0, 16, 96, 1)
+            Height: =176
+            Text: ="Consultar Ordenes"
+            VerticalAlign: =VerticalAlign.Bottom
+            Width: =225
+            X: =1095
+            Y: =402
+            ZIndex: =17
+
+        Icon3_1 As icon.AddLibrary:
+            Color: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.Search
+            X: =1175
+            Y: =444
+            ZIndex: =18
+
+    Group3_1 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =21
+
+        Button2_3 As button:
+            Fill: =RGBA(0, 16, 96, 1)
+            Height: =176
+            Text: ="Consular Productos"
+            VerticalAlign: =VerticalAlign.Bottom
+            Width: =225
+            X: =825
+            Y: =402
+            ZIndex: =16
+
+        Icon4_1 As icon.AddDocument:
+            Color: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.Search
+            X: =905
+            Y: =444
+            ZIndex: =19
 
