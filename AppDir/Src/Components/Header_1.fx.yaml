@@ -1,0 +1,44 @@
+Header_1 As CanvasComponent:
+    Fill: =RGBA(14, 12, 90, 1)
+    Height: =40
+    Logo: =SampleImage
+    LogoHeight: =35
+    LogoWidth: =110
+    LogoX: =44
+    StartScreen: =App.ActiveScreen
+    Title: ="Texto"
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Logo_2 As image:
+        DisplayMode: =DisplayMode.View
+        Height: =Header_1.LogoHeight
+        Image: =Header_1.Logo
+        OnSelect: =If(!IsBlank(Header_1.StartScreen),Navigate(Header_1.StartScreen,None))
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        Width: =Header_1.LogoWidth
+        X: =34
+        Y: =2
+        ZIndex: =2
+
+    Title_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Font: =Font.Arial
+        LineHeight: =1
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: =Header_1.Title
+        Width: =Header_1.Width-(Header_1.LogoX+Header_1.LogoWidth)*2
+        X: =155
+        ZIndex: =3
+

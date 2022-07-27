@@ -1,35 +1,192 @@
 {
-  "ComponentIndexes": {},
+  "ComponentIndexes": {
+    "ComponentMenu": 2,
+    "ComponentMenu_1": 2,
+    "Header_1": 1,
+    "Header_2": 1
+  },
   "ControlUniqueIds": {
+    "ActiveScreen": 30,
     "App": 1,
-    "Screen1": 3
+    "Button1": 33,
+    "Button2": 47,
+    "Button2_1": 48,
+    "ComponentMenu": 22,
+    "ComponentMenu_1": 35,
+    "GaleriaMenu": 28,
+    "galleryTemplate4": 29,
+    "Group1": 40,
+    "Group2": 52,
+    "Group3": 53,
+    "Header_1": 6,
+    "Header_2": 34,
+    "Icon3": 50,
+    "Icon4": 51,
+    "IconMenu": 25,
+    "IconScreen": 31,
+    "Image1": 39,
+    "Label1": 37,
+    "Label2": 26,
+    "Label3": 24,
+    "Label3_1": 23,
+    "Label3_2": 27,
+    "LabelMenu": 32,
+    "Logo_2": 8,
+    "Rectangle3": 45,
+    "Screen1": 3,
+    "Title_1": 7
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/27/2022 18:55:04",
+  "HeaderLastSavedDateTimeUTC": "07/27/2022 19:50:37",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "d8ccf0f6-715b-4be6-85e7-8f8c7c8a0125": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/012afb39f9274dbebbe505315d8b8ce9\"",
+    "f65fdc07-e216-41fd-a3c6-6a7c55d11a16": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/768b1ac708c048c6ae23b28e9ee0bdfa\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
-  "OrderComponentMetadata": {},
-  "OrderComponentTemplate": {},
-  "OrderDataSource": {},
-  "OrderGroupControls": {},
+  "LocalResourceFileNames": {
+    "ActaODS": "d380b297-6c2f-46af-9d8c-018cfc6b37fc.PNG",
+    "Calendario": "764d46ee-215c-4abf-bb5c-c94c255ed409.png",
+    "Eco_logo_1_Color": "787ff526-ad19-45b6-b55f-1c8c060d293d.png",
+    "Eco_logo_1_Color_FondOscuro": "1e201fd2-0ae3-450b-a72a-e838fc4dad22.png",
+    "ECP": "cfd63577-6fe1-4096-a1de-601e0386ebd8.png",
+    "ECPLogo": "9634ddc2-b690-4c6d-be5c-c87b40d65af0.png",
+    "FormatoSol": "2fc04ead-b8fe-463a-89ea-96eb648ac06e.PNG",
+    "logo_eco_p1_slogan": "74d907a7-6bc2-44b4-b1a0-ec4b09e76893.png",
+    "lolo_eco": "8551d7d1-99f7-4775-ab22-595d93ff4f2d.png",
+    "MemoPDF": "bfb43dac-fa47-4164-a4ae-ba4e88aa9a9c.PNG",
+    "MicrosoftTeams-image (2)": "66c4e90f-74af-4edb-974a-9f85ff86142e.png",
+    "MicrosoftTeams-image (4)": "75714615-1e8b-4741-9f2a-94cd8d03b618.png",
+    "MinutaODS": "31420f74-890e-48b5-baed-ae6cb941e70a.PNG",
+    "PresupEscogido": "33324b83-231b-481a-b834-69c44f1805ec.PNG",
+    "PresupuestoConst": "2ac06196-61c7-4535-be93-9e4df21a7d08.PNG",
+    "productos": "2a2fc701-6552-4b4d-9ce7-8dbece7b5dbe.png"
+  },
+  "LocalResourceRootPaths": {
+    "ActaODS": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images0eda743ec-3370-4c18-ab48-ed7a20f87aac.PNG?sv=2017-04-17&sr=b&sig=z0pJUzR4c5u4wwe2ALPkkDucrCLxnwz9QyqxcFxWgCE%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "Calendario": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images0bcb49c7e-83c1-45b8-b8ec-00d3f55d3bbd.png?sv=2017-04-17&sr=b&sig=z5QBv2k0Kpufveto1DyQNtrbEZI8kMdxw7rD%2FQHtMW8%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "Eco_logo_1_Color": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images096930943-09ed-423d-b8e9-0e1a4e1adb1e.png?sv=2017-04-17&sr=b&sig=6L3wh1t56DeC2gWQ1GGhYk0EPcVSLg0%2ByLh%2FpFaQuXw%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "Eco_logo_1_Color_FondOscuro": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images0965c5bfd-3745-495a-b26a-ff0aff29385a.png?sv=2017-04-17&sr=b&sig=XrAtf7eYoxZ6nMLK13KTl9utGjlZPIoA4sx%2FLJA6LKE%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "ECP": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images072da114d-b0b9-4838-ad8f-51e81d6075ec.png?sv=2017-04-17&sr=b&sig=QZj6IniahOwU9yfWDMj%2BZgEUFOa0pm99P%2BbQF%2FeM3tY%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "ECPLogo": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images009d4f4ec-54b2-4ba5-b7a7-61a027714bb8.png?sv=2017-04-17&sr=b&sig=6FNzF9aig8mn5%2Be71M6yHR%2F%2Fd4qrxlb6QeX9GDl0rSU%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "FormatoSol": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images01edb9c3a-3978-463e-a2be-db59f3e9bd82.PNG?sv=2017-04-17&sr=b&sig=3InIRniVqZQoHlLfOzKfwMwEnHa68Mi%2FX%2BuBob%2B6dKA%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "logo_eco_p1_slogan": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images0c033be45-8fe0-487c-8b12-31eee08246aa.png?sv=2017-04-17&sr=b&sig=oAILnFXVdat646sM%2FjuQ7ouxBiM2Cp0rjb6LoCj5JGM%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "lolo_eco": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images03d81b224-09b6-4e73-b58d-3629f90f3f7e.png?sv=2017-04-17&sr=b&sig=2iWo%2FitfupqjGBBUieX%2Bl1WIUH71Ja0nKVESmJRnLHw%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "MemoPDF": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images073664d32-c343-429d-bda7-4e1360f17030.PNG?sv=2017-04-17&sr=b&sig=%2B3OcDCqoYS%2B16sM4y7gIeCH%2BV%2BovUfI5BAw2JRq6uGg%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "MicrosoftTeams-image (2)": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images00ef606ac-6a5e-4a76-ac9e-0bd79192ed08.png?sv=2017-04-17&sr=b&sig=EU49vgZDuxwaOGtxU5UQ2ZkpaiHgsjgD6l6c1RRLq%2Fw%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "MicrosoftTeams-image (4)": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images0f1abb017-1080-4673-91a3-6e44bf409737.png?sv=2017-04-17&sr=b&sig=LC9XcP%2B4jJl%2BqZsHIxAEuI7QPEDKrUm5mdlp8NdTjP0%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "MinutaODS": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images094e7f9f6-dbc3-46a3-b33b-26f3e71f7a3b.PNG?sv=2017-04-17&sr=b&sig=jrA359c%2Bje%2BEFk3p1xBrkuTz7XqGyhOqogoSedZ4NfM%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "PresupEscogido": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images08b61248a-6438-418d-801e-2c378edd1b93.PNG?sv=2017-04-17&sr=b&sig=kjRQVYy9i91L6QBPM6dCKWgpWOLNz9HB81IVcbbxlVs%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "PresupuestoConst": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/Assets0Images08e545aa5-219b-45e3-8c11-f8ff495687f0.PNG?sv=2017-04-17&sr=b&sig=xEVmIoyTg5Ar5s%2B2cTJDSOjKVnsfLvauO8TJ3eu0Ni4%3D&spr=https&se=2022-07-28T19%3A31%3A47Z&sp=r",
+    "productos": "https://docserverpwaprodsbr.blob.core.windows.net/a18cafdd-e286-484a-9b6c-89fdc7e95fb6-1/resource/84bd7a6a-6303-4f17-8bf6-b63bb272f18a.png?sv=2017-04-17&sr=b&sig=lxKfLe4zbtdX35s%2FKg4crrZtdzgpZJf4BerL9aZaw5I%3D&spr=https&se=2022-07-28T19%3A34%3A08Z&sp=r"
+  },
+  "OrderComponentMetadata": {
+    "82f1e843158b45b09c7a199e586dd5b6": 0,
+    "84dcfaf204254348a2a766f63fadb4ae": 1
+  },
+  "OrderComponentTemplate": {
+    "82f1e843158b45b09c7a199e586dd5b6": 0,
+    "84dcfaf204254348a2a766f63fadb4ae": 1
+  },
+  "OrderDataSource": {
+    "CustomGallerySample": 3,
+    "Office365Outlook": 0,
+    "Ordenes de Producto": 1,
+    "Registro Productos": 2
+  },
+  "OrderGroupControls": {
+    "Group1": {
+      "Image1": 1,
+      "Label1": 0
+    },
+    "Group2": {
+      "Button2_1": 0,
+      "Icon3": 1
+    },
+    "Group3": {
+      "Button2": 1,
+      "Icon4": 0
+    }
+  },
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "PublishOrderIndices": {
-    "App": 0,
-    "Screen1": 0
+  "OrderXMLTemplate": {
+    "button": 4,
+    "gallery": 2,
+    "icon": 1,
+    "image": 5,
+    "label": 0,
+    "rectangle": 3
   },
-  "ResourcesJsonIndices": {},
+  "PublishOrderIndices": {
+    "ActiveScreen": 20,
+    "App": 0,
+    "Button1": 23,
+    "Button2": 5,
+    "Button2_1": 6,
+    "ComponentMenu": 0,
+    "ComponentMenu_1": 0,
+    "GaleriaMenu": 18,
+    "galleryTemplate4": 19,
+    "Group1": 4,
+    "Group2": 0,
+    "Group3": 0,
+    "Header_1": 0,
+    "Header_2": 1,
+    "Icon3": 8,
+    "Icon4": 7,
+    "IconMenu": 15,
+    "IconScreen": 21,
+    "Image1": 10,
+    "Label1": 3,
+    "Label2": 16,
+    "Label3": 14,
+    "Label3_1": 13,
+    "Label3_2": 17,
+    "LabelMenu": 22,
+    "Logo_2": 12,
+    "Rectangle3": 2,
+    "Screen1": 0,
+    "Title_1": 11
+  },
+  "ResourcesJsonIndices": {
+    "Image-ActaODS": 8,
+    "Image-Calendario": 14,
+    "Image-Eco_logo_1_Color": 7,
+    "Image-Eco_logo_1_Color_FondOscuro": 10,
+    "Image-ECP": 1,
+    "Image-ECPLogo": 0,
+    "Image-FormatoSol": 4,
+    "Image-logo_eco_p1_slogan": 12,
+    "Image-lolo_eco": 13,
+    "Image-MemoPDF": 3,
+    "Image-MicrosoftTeams-image (2)": 2,
+    "Image-MicrosoftTeams-image (4)": 11,
+    "Image-MinutaODS": 9,
+    "Image-PresupEscogido": 5,
+    "Image-PresupuestoConst": 6,
+    "Image-productos": 16,
+    "Image-SampleImage": 15
+  },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0215523,
-    "ControlCount": {},
-    "ErrorCount": 0
+    "ControlCount": {
+      "5c8ed2538b48402faa1f574469f26503": 1,
+      "82f1e843158b45b09c7a199e586dd5b6": 2,
+      "84dcfaf204254348a2a766f63fadb4ae": 2,
+      "a0969ce507de412a993bc31d7bff672a": 1,
+      "button": 4,
+      "gallery": 3,
+      "galleryTemplate": 3,
+      "icon": 4,
+      "image": 1,
+      "label": 7,
+      "rectangle": 7
+    },
+    "ErrorCount": 18
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

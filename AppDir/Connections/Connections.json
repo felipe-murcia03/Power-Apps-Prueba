@@ -1,1 +1,51 @@
-{}
+{
+  "d8ccf0f6-715b-4be6-85e7-8f8c7c8a0125": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://ccolabs.sharepoint.com/sites/AndresFelipeMurcia/": {
+        "dataSources": {
+          "Ordenes de Producto": {
+            "tableName": "02896c4f-98a3-4419-9ee7-53bb4ba4236f"
+          },
+          "Registro Productos": {
+            "tableName": "cadd577f-36c4-448a-9f29-1534d56ecb03"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Ordenes de Producto",
+      "Registro Productos"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d8ccf0f6-715b-4be6-85e7-8f8c7c8a0125"
+  },
+  "f65fdc07-e216-41fd-a3c6-6a7c55d11a16": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office\u00A0365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1580/1.0.1580.2838/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f65fdc07-e216-41fd-a3c6-6a7c55d11a16"
+  }
+}

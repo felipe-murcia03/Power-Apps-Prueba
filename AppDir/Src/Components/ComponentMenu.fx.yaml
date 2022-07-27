@@ -1,0 +1,172 @@
+ComponentMenu As CanvasComponent:
+    AnchoMenu: =If(mostrarMenu, 390, IconMenu.Width)
+    BMenu: =RGBA(39,67,125,255)
+    ColorMenu: =White
+    ExpandirMenu: =true
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =App.Height
+    Items: |-
+        =Table(
+            {
+                MenuLabel: "Inicio",
+                MenuIcon: Icon.NextArrow, 
+                MenuScreenNavigate: Inicio,
+                MenuId: 1   
+            },
+            {
+                MenuLabel: "Configuración",
+                MenuIcon: Icon.NextArrow,
+                MenuScreenNavigate: 'Configuración de Usuarios',
+                MenuId: 2   
+            },
+            {
+                MenuLabel: "Archivos planos",
+                MenuIcon: Icon.NextArrow,
+                MenuScreenNavigate: 'Archivos Planos',
+                MenuId: 3   
+            },
+            {
+                MenuLabel: "Reinyecciones",
+                MenuIcon: Icon.NextArrow,
+                MenuScreenNavigate: Reinyecciones,
+                MenuId: 4   
+            },
+            {
+                MenuLabel: "Abrir Periodo",
+                MenuIcon: Icon.NextArrow,
+                MenuScreenNavigate: 'Abrir Periodo',
+                MenuId: 5   
+            },
+            {
+                MenuLabel: "Crear Plantilla",
+                MenuIcon: Icon.NextArrow,
+                MenuScreenNavigate: 'Plantilla Calendario',
+                MenuId: 6   
+            },
+            {
+                MenuLabel: "Calendario de nómina",
+                MenuIcon: Icon.NextArrow,
+                MenuScreenNavigate: 'Calendario de Nómina',
+                MenuId: 7   
+            },
+            {
+                MenuLabel: "Salir",
+                MenuIcon: Icon.NextArrow,
+                MenuScreenNavigate: Inicio,
+                MenuId: 8 
+            }
+        )
+    OnReset: =Set(mostrarMenu, ComponentMenu.ExpandirMenu)
+    Responsive: =mostrarMenu
+    TituloMenu: ="Texto"
+    Width: =410
+    X: =0
+    Y: =0
+    ZIndex: =2
+
+    Label3_2 As label:
+        Color: =RGBA(175, 191, 224, 1)
+        Fill: =RGBA(14, 12, 90, 1)
+        Height: =App.Height
+        Text: =""
+        Width: =48
+        Y: =50
+        ZIndex: =1
+
+    Label3_1 As label:
+        Color: =RGBA(175, 191, 224, 1)
+        Fill: =RGBA(14, 12, 90, 1)
+        Height: =50
+        Text: =""
+        Visible: =mostrarMenu
+        Width: =410
+        ZIndex: =2
+
+    Label3 As label:
+        Color: =RGBA(175, 191, 224, 1)
+        Fill: =RGBA(14, 12, 90, 1)
+        Height: =50
+        Text: =""
+        Width: =48
+        ZIndex: =3
+
+    IconMenu As icon.Hamburger:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Icon: =Icon.Hamburger
+        OnSelect: =Set(mostrarMenu, !mostrarMenu)
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =48
+        ZIndex: =4
+
+    GaleriaMenu As gallery.variableTemplateHeightGallery:
+        Fill: =RGBA(14, 12, 90, 1)
+        Height: =Parent.Height-IconMenu.Height
+        Items: =ComponentMenu.Items
+        Layout: =Layout.Vertical
+        TemplateSize: =52
+        Visible: =mostrarMenu
+        Width: =410
+        Y: =IconMenu.Height
+        ZIndex: =5
+
+        ActiveScreen As rectangle:
+            Fill: =RGBA(136, 160, 209, 1)
+            Height: =40
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.MenuScreenNavigate = App.ActiveScreen
+            Width: =5
+            X: =4
+            ZIndex: =1
+
+        IconScreen As icon.Add:
+            Color: =ComponentMenu.ColorMenu
+            Height: =40
+            Icon: =ThisItem.MenuIcon
+            OnSelect: =
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =41
+            X: =9
+            Y: =5
+            ZIndex: =2
+
+        LabelMenu As label:
+            Color: =ComponentMenu.ColorMenu
+            Font: =Font.Arial
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.MenuLabel
+            Width: =350
+            X: =50
+            Y: =5
+            ZIndex: =3
+
+        Button1 As button:
+            Color: =ComponentMenu.ColorMenu
+            Fill: =Transparent
+            Font: =Font.Verdana
+            HoverFill: =Transparent
+            OnSelect: =Navigate(ThisItem.MenuScreenNavigate)
+            PressedFill: =Transparent
+            Text: =""
+            Width: =Parent.TemplateWidth
+            Y: =11
+            ZIndex: =4
+
+    Label2 As label:
+        Color: =ComponentMenu.ColorMenu
+        Font: =Font.Arial
+        FontWeight: =Normal
+        Height: =50
+        Size: =14
+        Text: =ComponentMenu.TituloMenu
+        Visible: =mostrarMenu
+        Width: =320
+        X: =48
+        ZIndex: =6
+
