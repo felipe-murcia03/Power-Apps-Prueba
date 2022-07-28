@@ -1,0 +1,484 @@
+"'Consultar Ordenes' As screen":
+
+    "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(0, 13, 75, 1)
+        BorderThickness: =2
+        Height: =608
+        Items: |-
+            =Filter(
+                    'Ordenes de Producto',
+                    IsBlank(Dropdown2.Selected.Result) Or IsEmpty(Dropdown2.Selected.Result) Or Producto.Value = Dropdown2.Selected.Result,
+                    IsBlank(Dropdown2_1.Selected.Result) Or IsEmpty(Dropdown2_1.Selected.Result) Or 'Usuario solicitante'.DisplayName = Dropdown2_1.Selected.Result
+            )
+            
+            
+            //Search(AddColumns('Ordenes de Producto';"Producto"; Producto.Value); TextInput1_1; 
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =142
+        Width: =652
+        X: =48
+        Y: =157
+        ZIndex: =1
+
+        Title1_3 As label:
+            Height: =34
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: |-
+                ="Nombre Producto:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =193
+            X: =32
+            Y: =27
+            ZIndex: =2
+
+        Subtitle1_1 As label:
+            Height: =32
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.ID
+            VerticalAlign: =VerticalAlign.Top
+            Width: =179
+            X: =172
+            Y: =73
+            ZIndex: =3
+
+        NextArrow1_1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.View
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Ver los detalles del elemento"
+            Width: =60
+            X: =561
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator1_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Title1_4 As label:
+            FontWeight: =FontWeight.Normal
+            Height: =29
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.Producto.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =210
+            X: =239
+            Y: =27
+            ZIndex: =6
+
+        Title1_5 As label:
+            Height: =34
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: |-
+                ="ID Producto:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =193
+            X: =32
+            Y: =78
+            ZIndex: =7
+
+    FormViewer1_1 As formViewer:
+        DataSource: ='Ordenes de Producto'
+        Height: =720
+        Item: =Gallery1_1.Selected
+        NumberOfColumns: =1
+        Width: =656
+        X: =710
+        Y: =48
+        ZIndex: =2
+
+        Producto_DataCard1 As typedDataCard.comboBoxViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Producto"
+            Default: =ThisItem.Producto
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Ordenes de Producto'],DataSourceInfo.DisplayName,"Producto")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue13.Selected
+            Width: =656
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+            DataCardKey13 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue13.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue13 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Ordenes de Producto'].Producto)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Ordenes de Producto'.Producto,DataCardValue13.SearchText)
+                SelectMultiple: =false
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey13.X + DataCardKey13.Width
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue13.Y + DataCardValue13.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey13.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey13.Y
+                ZIndex: =4
+
+        "'Numero de la orden_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Numerodelaorden"
+            Default: =ThisItem.'Numero de la orden'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Ordenes de Producto'],DataSourceInfo.DisplayName,"Numerodelaorden")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =656
+            X: =0
+            Y: =1
+            ZIndex: =5
+
+            DataCardKey14 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue14.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue14 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey14.X + DataCardKey14.Width
+                Y: =10
+                ZIndex: =2
+
+        "'Usuario solicitante_DataCard1' As typedDataCard.comboBoxViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Usuariosolicitante"
+            Default: =ThisItem.'Usuario solicitante'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Ordenes de Producto'],DataSourceInfo.DisplayName,"Usuariosolicitante")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue15.Selected
+            Width: =656
+            X: =0
+            Y: =2
+            ZIndex: =5
+
+            DataCardKey15 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue15.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue15 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Ordenes de Producto'].'Usuario solicitante')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["DisplayName"]
+                SearchItems: =Choices('Ordenes de Producto'.'Usuario solicitante',DataCardValue15.SearchText)
+                SelectMultiple: =false
+                Template: =ListItemTemplate.Person
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey15.X + DataCardKey15.Width
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue15.Y + DataCardValue15.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey15.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey15.Y
+                ZIndex: =4
+
+        "'Usuario Aprobador_DataCard1' As typedDataCard.comboBoxViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="UsuarioAprobador"
+            Default: =ThisItem.'Usuario Aprobador'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Ordenes de Producto'],DataSourceInfo.DisplayName,"UsuarioAprobador")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue16.Selected
+            Width: =656
+            X: =0
+            Y: =3
+            ZIndex: =5
+
+            DataCardKey16 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue16.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue16 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Ordenes de Producto'].'Usuario Aprobador')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["DisplayName"]
+                SearchItems: =Choices('Ordenes de Producto'.'Usuario Aprobador',DataCardValue16.SearchText)
+                SelectMultiple: =false
+                Template: =ListItemTemplate.Person
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey16.X + DataCardKey16.Width
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue16.Y + DataCardValue16.Height
+                ZIndex: =3
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Height: =DataCardKey16.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey16.Y
+                ZIndex: =4
+
+        "'Cantidad solicitada_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Cantidadsolicitada"
+            Default: =ThisItem.'Cantidad solicitada'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Ordenes de Producto'],DataSourceInfo.DisplayName,"Cantidadsolicitada")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =656
+            X: =0
+            Y: =4
+            ZIndex: =5
+
+            DataCardKey17 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue17.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue17 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey17.X + DataCardKey17.Width
+                Y: =10
+                ZIndex: =2
+
+        "'Cantidad aprobada_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Cantidadaprobada"
+            Default: =ThisItem.'Cantidad aprobada'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Ordenes de Producto'],DataSourceInfo.DisplayName,"Cantidadaprobada")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =656
+            X: =0
+            Y: =5
+            ZIndex: =5
+
+            DataCardKey18 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue18.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue18 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey18.X + DataCardKey18.Width
+                Y: =10
+                ZIndex: =2
+
+    Rectangle4_1 As rectangle:
+        Fill: =RGBA(0, 16, 96, 1)
+        Height: =718
+        Width: =9
+        X: =700
+        Y: =50
+        ZIndex: =3
+
+    Dropdown2 As dropdown:
+        Items: =Distinct('Ordenes de Producto', Producto.Value)
+        Width: =231
+        X: =64
+        Y: =96
+        ZIndex: =4
+
+    Dropdown2_1 As dropdown:
+        Items: =Distinct('Ordenes de Producto', 'Usuario solicitante'.DisplayName)
+        Width: =231
+        X: =362
+        Y: =96
+        ZIndex: =5
+
+    Label4 As label:
+        FontWeight: =FontWeight.Semibold
+        Text: ="Producto"
+        X: =64
+        Y: =53
+        ZIndex: =6
+
+    Label4_1 As label:
+        FontWeight: =FontWeight.Semibold
+        Text: ="Usuario Solicitante"
+        Width: =190
+        X: =362
+        Y: =56
+        ZIndex: =7
+
+    Header_4 As Header_1:
+        Height: =50
+        Logo: =productos
+        LogoHeight: =50
+        Title: ="Consultar Ordenes"
+        Width: =If(Header_4.X = 47, 1320, 1023)
+        X: =If(ComponentMenu_5.Responsive = true, 343, 47)
+        ZIndex: =8
+
+    ComponentMenu_5 As ComponentMenu:
+        OnReset: =Set(mostrarMenu, ComponentMenu_5.ExpandirMenu)
+        TituloMenu: ="Consultar Ordenes"
+        Width: =If(ComponentMenu_5.Responsive = true, 343, 47)
+        ZIndex: =9
+

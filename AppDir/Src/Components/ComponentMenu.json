@@ -97,7 +97,7 @@
         "Name": "Label3_1",
         "Parent": "ComponentMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 68,
+        "PublishOrderIndex": 196,
         "Rules": [
           {
             "Category": "Data",
@@ -434,7 +434,7 @@
         "Name": "Label3",
         "Parent": "ComponentMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 69,
+        "PublishOrderIndex": 197,
         "Rules": [
           {
             "Category": "Data",
@@ -775,7 +775,7 @@
         "Name": "IconMenu",
         "Parent": "ComponentMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 70,
+        "PublishOrderIndex": 198,
         "Rules": [
           {
             "Category": "Design",
@@ -1062,7 +1062,7 @@
         "Name": "Label2",
         "Parent": "ComponentMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 71,
+        "PublishOrderIndex": 199,
         "Rules": [
           {
             "Category": "Data",
@@ -1406,7 +1406,7 @@
         "Name": "Label3_2",
         "Parent": "ComponentMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 72,
+        "PublishOrderIndex": 200,
         "Rules": [
           {
             "Category": "Data",
@@ -1681,7 +1681,7 @@
             "Name": "galleryTemplate4",
             "Parent": "GaleriaMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 74,
+            "PublishOrderIndex": 202,
             "Rules": [
               {
                 "Category": "Design",
@@ -1755,7 +1755,7 @@
             "Name": "ActiveScreen",
             "Parent": "GaleriaMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 75,
+            "PublishOrderIndex": 203,
             "Rules": [
               {
                 "Category": "Design",
@@ -1985,7 +1985,7 @@
             "Name": "IconScreen",
             "Parent": "GaleriaMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 76,
+            "PublishOrderIndex": 204,
             "Rules": [
               {
                 "Category": "Design",
@@ -2251,7 +2251,7 @@
             "Name": "LabelMenu",
             "Parent": "GaleriaMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 77,
+            "PublishOrderIndex": 205,
             "Rules": [
               {
                 "Category": "Data",
@@ -2634,7 +2634,7 @@
             "Name": "Button1",
             "Parent": "GaleriaMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 78,
+            "PublishOrderIndex": 206,
             "Rules": [
               {
                 "Category": "Data",
@@ -2944,7 +2944,7 @@
         "Name": "GaleriaMenu",
         "Parent": "ComponentMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 73,
+        "PublishOrderIndex": 201,
         "Rules": [
           {
             "Category": "Data",
@@ -3180,12 +3180,12 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637945462072407219",
+    "LastModifiedTimestamp": "637945629750988233",
     "Name": "ComponentMenu",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Table(\r\n    {\r\n        MenuLabel: \"Inicio\",\r\n        MenuIcon: Icon.NextArrow, \r\n        MenuScreenNavigate: Inicio,\r\n        MenuId: 1   \r\n    },\r\n    {\r\n        MenuLabel: \"Configuración\",\r\n        MenuIcon: Icon.NextArrow,\r\n        MenuScreenNavigate: 'Configuración de Usuarios',\r\n        MenuId: 2   \r\n    },\r\n    {\r\n        MenuLabel: \"Archivos planos\",\r\n        MenuIcon: Icon.NextArrow,\r\n        MenuScreenNavigate: 'Archivos Planos',\r\n        MenuId: 3   \r\n    },\r\n    {\r\n        MenuLabel: \"Reinyecciones\",\r\n        MenuIcon: Icon.NextArrow,\r\n        MenuScreenNavigate: Reinyecciones,\r\n        MenuId: 4   \r\n    },\r\n    {\r\n        MenuLabel: \"Abrir Periodo\",\r\n        MenuIcon: Icon.NextArrow,\r\n        MenuScreenNavigate: 'Abrir Periodo',\r\n        MenuId: 5   \r\n    },\r\n    {\r\n        MenuLabel: \"Crear Plantilla\",\r\n        MenuIcon: Icon.NextArrow,\r\n        MenuScreenNavigate: 'Plantilla Calendario',\r\n        MenuId: 6   \r\n    },\r\n    {\r\n        MenuLabel: \"Calendario de nómina\",\r\n        MenuIcon: Icon.NextArrow,\r\n        MenuScreenNavigate: 'Calendario de Nómina',\r\n        MenuId: 7   \r\n    },\r\n    {\r\n        MenuLabel: \"Salir\",\r\n        MenuIcon: Icon.NextArrow,\r\n        MenuScreenNavigate: Inicio,\r\n        MenuId: 8 \r\n    }\r\n)",
+        "InvariantScript": "Table(\r\n    {\r\n        MenuLabel: \"Inicio\",\r\n        MenuIcon: Icon.NextArrow, \r\n        MenuScreenNavigate: Inicio,\r\n        MenuId: 1   \r\n    },\r\n    {\r\n        MenuLabel: \"Consultar Productos\",\r\n        MenuIcon: Icon.NextArrow,\r\n        MenuScreenNavigate: 'Consultar Productos',\r\n        MenuId: 2   \r\n    },\r\n    {\r\n        MenuLabel: \"Agregar Productos\",\r\n        MenuIcon: Icon.NextArrow,\r\n        MenuScreenNavigate: 'Agregar Productos',\r\n        MenuId: 3   \r\n    },\r\n    {\r\n        MenuLabel: \"Agregar Orden\",\r\n        MenuIcon: Icon.NextArrow,\r\n        MenuScreenNavigate: 'Agregar Orden',\r\n        MenuId: 4   \r\n    },\r\n    {\r\n        MenuLabel: \"Consultar Ordenes\",\r\n        MenuIcon: Icon.NextArrow,\r\n        MenuScreenNavigate: 'Consultar Ordenes',\r\n        MenuId: 5   \r\n    }\r\n)",
         "Property": "Items",
         "RuleProviderType": "System"
       },
@@ -3352,7 +3352,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637945462072407219",
+  "LastModifiedTimestamp": "637945629750988233",
   "Name": "84dcfaf204254348a2a766f63fadb4ae",
   "OverridableProperties": {},
   "TemplateOriginalName": "ddfa2e6f84a54b00a7ad61076d0c50ea",

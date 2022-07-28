@@ -1,20 +1,5 @@
 "'Consultar Productos' As screen":
 
-    ComponentMenu_2 As ComponentMenu:
-        OnReset: =Set(mostrarMenu, ComponentMenu_2.ExpandirMenu)
-        TituloMenu: ="Consultar Productos"
-        Width: =If(ComponentMenu_2.Responsive = true, 343, 47)
-        ZIndex: =1
-
-    Header_3 As Header_1:
-        Height: =50
-        Logo: =productos
-        LogoHeight: =50
-        Title: ="Consultar Productos"
-        Width: =If(Header_3.X = 47, 1320, 1023)
-        X: =If(ComponentMenu_2.Responsive = true, 343, 47)
-        ZIndex: =2
-
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(0, 13, 75, 1)
         BorderThickness: =2
@@ -26,7 +11,7 @@
         Width: =652
         X: =48
         Y: =94
-        ZIndex: =3
+        ZIndex: =1
 
         Image2 As image:
             Height: =128
@@ -130,7 +115,7 @@
         Width: =656
         X: =710
         Y: =48
-        ZIndex: =4
+        ZIndex: =2
 
         ID_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -542,7 +527,7 @@
         Width: =9
         X: =700
         Y: =50
-        ZIndex: =5
+        ZIndex: =3
 
     TextInput1 As text:
         Default: =""
@@ -551,7 +536,7 @@
         Width: =652
         X: =48
         Y: =50
-        ZIndex: =6
+        ZIndex: =4
 
     Icon7 As icon.Cancel:
         Height: =32
@@ -560,5 +545,30 @@
         Width: =32
         X: =652
         Y: =56
+        ZIndex: =5
+
+    Icon9 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =35
+        Icon: =Icon.Add
+        OnSelect: =NewForm(Form1); Navigate('Agregar Productos')
+        Width: =43
+        X: =1286
+        Y: =7
+        ZIndex: =6
+
+    Header_3 As Header_1:
+        Height: =50
+        Logo: =productos
+        LogoHeight: =50
+        Title: ="Consultar Productos"
+        Width: =If(Header_3.X = 47, 1320, 1023)
+        X: =If(ComponentMenu_2.Responsive = true, 343, 47)
         ZIndex: =7
+
+    ComponentMenu_2 As ComponentMenu:
+        OnReset: =Set(mostrarMenu, ComponentMenu_2.ExpandirMenu)
+        TituloMenu: ="Consultar Productos"
+        Width: =If(ComponentMenu_2.Responsive = true, 343, 47)
+        ZIndex: =8
 

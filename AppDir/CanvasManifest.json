@@ -103,6 +103,9 @@
   },
   "ScreenOrder": [
     "Inicio",
-    "Consultar Productos"
+    "Consultar Productos",
+    "Agregar Productos",
+    "Agregar Orden",
+    "Consultar Ordenes"
   ]
 }

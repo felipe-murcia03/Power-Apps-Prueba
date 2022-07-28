@@ -8,22 +8,6 @@ Inicio As screen:
         Y: =50
         ZIndex: =1
 
-    Header_2 As Header_1:
-        Height: =50
-        Logo: =productos
-        LogoHeight: =50
-        LogoX: =45
-        Title: ="Inicio"
-        Width: =If(Header_2.X = 47, 1320, 1023)
-        X: =If(ComponentMenu_1.Responsive = true, 343, 47)
-        ZIndex: =2
-
-    ComponentMenu_1 As ComponentMenu:
-        OnReset: =Set(mostrarMenu, ComponentMenu_1.ExpandirMenu)
-        TituloMenu: ="Inicio"
-        Width: =If(ComponentMenu_1.Responsive = true, 343, 47)
-        ZIndex: =3
-
     Group1 As group:
         Height: =5
         Width: =5
@@ -40,7 +24,7 @@ Inicio As screen:
             Width: =667
             X: =73
             Y: =217
-            ZIndex: =4
+            ZIndex: =2
 
         Image1 As image:
             Height: =149
@@ -48,7 +32,23 @@ Inicio As screen:
             Width: =181
             X: =316
             Y: =402
-            ZIndex: =5
+            ZIndex: =3
+
+    Header_2 As Header_1:
+        Height: =50
+        Logo: =productos
+        LogoHeight: =50
+        LogoX: =45
+        Title: ="Inicio"
+        Width: =If(Header_2.X = 47, 1320, 1023)
+        X: =If(ComponentMenu_1.Responsive = true, 343, 47)
+        ZIndex: =12
+
+    ComponentMenu_1 As ComponentMenu:
+        OnReset: =Set(mostrarMenu, ComponentMenu_1.ExpandirMenu)
+        TituloMenu: ="Inicio"
+        Width: =If(ComponentMenu_1.Responsive = true, 343, 47)
+        ZIndex: =13
 
     Group2 As group:
         Height: =5
@@ -60,19 +60,21 @@ Inicio As screen:
         Button2_1 As button:
             Fill: =RGBA(0, 16, 96, 1)
             Height: =176
+            OnSelect: =NewForm(Form1_1); Navigate('Agregar Orden')
             Text: ="Crear Orden"
             VerticalAlign: =VerticalAlign.Bottom
             Width: =225
             X: =1095
             Y: =204
-            ZIndex: =12
+            ZIndex: =5
 
         Icon3 As icon.AddLibrary:
             Color: =RGBA(255, 255, 255, 1)
             Icon: =Icon.AddLibrary
+            OnSelect: =NewForm(Form1_1); Navigate('Agregar Orden')
             X: =1175
             Y: =246
-            ZIndex: =14
+            ZIndex: =6
 
     Group3 As group:
         Height: =5
@@ -84,19 +86,21 @@ Inicio As screen:
         Button2 As button:
             Fill: =RGBA(0, 16, 96, 1)
             Height: =176
+            OnSelect: =NewForm(Form1); Navigate('Agregar Productos')
             Text: ="Agregar Productos"
             VerticalAlign: =VerticalAlign.Bottom
             Width: =225
             X: =825
             Y: =204
-            ZIndex: =11
+            ZIndex: =4
 
         Icon4 As icon.AddDocument:
             Color: =RGBA(255, 255, 255, 1)
             Icon: =Icon.AddDocument
+            OnSelect: =NewForm(Form1); Navigate('Agregar Productos')
             X: =905
             Y: =246
-            ZIndex: =15
+            ZIndex: =7
 
     Group2_1 As group:
         Height: =5
@@ -108,19 +112,21 @@ Inicio As screen:
         Button2_2 As button:
             Fill: =RGBA(0, 16, 96, 1)
             Height: =176
+            OnSelect: =Navigate('Consultar Ordenes')
             Text: ="Consultar Ordenes"
             VerticalAlign: =VerticalAlign.Bottom
             Width: =225
             X: =1095
             Y: =402
-            ZIndex: =17
+            ZIndex: =9
 
         Icon3_1 As icon.AddLibrary:
             Color: =RGBA(255, 255, 255, 1)
             Icon: =Icon.Search
+            OnSelect: =Navigate('Consultar Ordenes')
             X: =1175
             Y: =444
-            ZIndex: =18
+            ZIndex: =10
 
     Group3_1 As group:
         Height: =5
@@ -132,17 +138,19 @@ Inicio As screen:
         Button2_3 As button:
             Fill: =RGBA(0, 16, 96, 1)
             Height: =176
+            OnSelect: =Navigate('Consultar Productos')
             Text: ="Consultar Productos"
             VerticalAlign: =VerticalAlign.Bottom
             Width: =225
             X: =825
             Y: =402
-            ZIndex: =16
+            ZIndex: =8
 
         Icon4_1 As icon.AddDocument:
             Color: =RGBA(255, 255, 255, 1)
             Icon: =Icon.Search
+            OnSelect: =Navigate('Consultar Productos')
             X: =905
             Y: =444
-            ZIndex: =19
+            ZIndex: =11
 

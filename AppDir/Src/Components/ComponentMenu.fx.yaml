@@ -14,46 +14,28 @@ ComponentMenu As CanvasComponent:
                 MenuId: 1   
             },
             {
-                MenuLabel: "Configuración",
+                MenuLabel: "Consultar Productos",
                 MenuIcon: Icon.NextArrow,
-                MenuScreenNavigate: 'Configuración de Usuarios',
+                MenuScreenNavigate: 'Consultar Productos',
                 MenuId: 2   
             },
             {
-                MenuLabel: "Archivos planos",
+                MenuLabel: "Agregar Productos",
                 MenuIcon: Icon.NextArrow,
-                MenuScreenNavigate: 'Archivos Planos',
+                MenuScreenNavigate: 'Agregar Productos',
                 MenuId: 3   
             },
             {
-                MenuLabel: "Reinyecciones",
+                MenuLabel: "Agregar Orden",
                 MenuIcon: Icon.NextArrow,
-                MenuScreenNavigate: Reinyecciones,
+                MenuScreenNavigate: 'Agregar Orden',
                 MenuId: 4   
             },
             {
-                MenuLabel: "Abrir Periodo",
+                MenuLabel: "Consultar Ordenes",
                 MenuIcon: Icon.NextArrow,
-                MenuScreenNavigate: 'Abrir Periodo',
+                MenuScreenNavigate: 'Consultar Ordenes',
                 MenuId: 5   
-            },
-            {
-                MenuLabel: "Crear Plantilla",
-                MenuIcon: Icon.NextArrow,
-                MenuScreenNavigate: 'Plantilla Calendario',
-                MenuId: 6   
-            },
-            {
-                MenuLabel: "Calendario de nómina",
-                MenuIcon: Icon.NextArrow,
-                MenuScreenNavigate: 'Calendario de Nómina',
-                MenuId: 7   
-            },
-            {
-                MenuLabel: "Salir",
-                MenuIcon: Icon.NextArrow,
-                MenuScreenNavigate: Inicio,
-                MenuId: 8 
             }
         )
     OnReset: =Set(mostrarMenu, ComponentMenu.ExpandirMenu)
